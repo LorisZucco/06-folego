@@ -7,9 +7,9 @@ export default function Header() {
         <h1 className="logo">Fôlego</h1>
 
         <nav className="nav"></nav>
-        <p>ínicio</p>
-        <p> Modalidades</p>
-        <p>Sobre </p>
+        <p>Ínicio</p>
+        <p>Modalidades</p>
+        <p>Sobre</p>
 
     </header>
   )
