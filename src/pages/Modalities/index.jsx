@@ -1,4 +1,4 @@
-import "modalities.css";
+import "./modalities.css";
 
 export default function Modalities() {
   return (
