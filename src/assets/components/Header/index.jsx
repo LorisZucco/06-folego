@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { Link, NavLink } from "react-router"
 import "./header.css"
 
 
@@ -8,11 +8,11 @@ export default function Header() {
     <header className="header">
         <h1 className="logo">Fôlego</h1>
 
-        <nav className="nav"></nav>
-        <Link to="/">Ínicio</Link>
-        <Link to="/modalidades">Modalidades</Link>
-        <Link to="/sobre">Sobre</Link>
-
+        <nav className="nav">
+        <NavLink to="/">Ínicio</NavLink>
+        <NavLink to="/modalidades">Modalidades</NavLink>
+        <NavLink to="/sobre">Sobre</NavLink>
+        </nav>
     </header>
   )
 }
