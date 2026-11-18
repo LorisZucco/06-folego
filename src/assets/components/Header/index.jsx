@@ -7,9 +7,9 @@ export default function Header() {
         <h1 className="logo">Fôlego</h1>
 
         <nav className="nav"></nav>
-        <p>Ínicio</p>
-        <p>Modalidades</p>
-        <p>Sobre</p>
+        <a href="=/">Ínicio</a>
+        <a href="/modalidades">Modalidades</a>
+        <a href="/sobre">Sobre</a>
 
     </header>
   )
