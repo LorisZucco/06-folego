@@ -12,28 +12,31 @@ import Assessments from "./pages/Assessments";
 import Contact from "./pages/Contact";
 import ModalityDetail from "./pages/ModalityDetail";
 import Login from "./pages/Login";
+import AuthProvider from "./contexts/AuthProvider";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
+    <AuthProvider>
+      <BrowserRouter>
+        <Header />
 
-      <main className="page">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/modalidades" element={<Modalities />} />
-          <Route path="/modalidades/:slug" element={<ModalityDetail />} />
-          <Route path="/sobre" element={<About />} />
+        <main className="page">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/modalidades" element={<Modalities />} />
+            <Route path="/modalidades/:slug" element={<ModalityDetail />} />
+            <Route path="/sobre" element={<About />} />
 
-          <Route path="/planos" element={<Plans />} />
-          <Route path="/avaliacoes" element={<Assessments />} />
-          <Route path="/contato" element={<Contact />} />
+            <Route path="/planos" element={<Plans />} />
+            <Route path="/avaliacoes" element={<Assessments />} />
+            <Route path="/contato" element={<Contact />} />
 
-          <Route path="login" element={<Login/>} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </main>
-    </BrowserRouter>
+            <Route path="login" element={<Login />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 
