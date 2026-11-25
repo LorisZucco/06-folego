@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import AuthContext  from "../../contexts/AuthContext"
+
 import { Link, NavLink } from "react-router";
 
 import "./header.css";
 
 export default function Header() {
+  
   return (
     <header className="header">
       <Link to="/" className="logo">
